@@ -2,4 +2,9 @@ language: node_js
 node_js:
   - "6"
 
-script: gulp build
+script: gulp build && deploy-gh-pages.sh
+
+env:
+  global:
+  - GH_REF: github.com/mwaltersva/tamagochi.git
+  - secure: 71f377f1db5269e224d104e9196b422e28702464
