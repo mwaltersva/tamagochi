@@ -1,11 +1,7 @@
 language: node_js
 node_js:
   - '6'
-script: gulp build
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: ./deploy-ghpages.sh
+script: bash ./deploy-ghpages.sh
 env:
   global:
     - GH_REF: github.com/mwaltersva/tamagochi-gh-pages.git
