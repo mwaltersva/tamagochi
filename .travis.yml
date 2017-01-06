@@ -1,15 +1,13 @@
 language: node_js
 node_js:
-  - "6"
-
+  - '6'
 script: gulp build
-
 deploy:
   skip_cleanup: true
   provider: script
   script: ./deploy-ghpages.sh
-
 env:
   global:
-  - GH_REF: github.com/mwaltersva/tamagochi.git
-  - secure: 71f377f1db5269e224d104e9196b422e28702464
+    - GH_REF: github.com/mwaltersva/tamagochi.git
+    - secure: >-
+        qkzi/9UPP4R7hcrxd4hxy/5sFBka3Y5jja50Y5ztL0zNQpZfHpASIcKfDHl61JqRaUiWSs6cfsSsDKtKQrEe0QJU4SSSzmo9qPwV4ZzVUtmwbgYzoAtoXLsJlw58YWmVv0vOvGaSQRMBX7euCTC+3YqRJ+6mh6/6wq1ftQGaQ0EcJ+nzs+SXuf5mHkKV8ck6sAcwX/AXFiyOsL/POJN5dwRezdrt24vbbacru34p6eDgUbTND5tFjBIlkn4773gj36JNYAGGrR/UJhGQF3lwzziOHi/gPpCgN9Lm/dEJ7ya+JfTHx6mnSp6f//LWR9DexunZcKgX9zjGScCsDYDUvXKcisMOIlfMGzH4NkSY3c4A1kTJYKsBzjRIdkrgxvXFSIFbl+DGRT5U5HwzDsyQNMclU5+sjCLhZVT9E9/eb1H6sk85oSFObI4U5MAxEI8oBtSKFoSYE10n//HdSZ8HA8T2BRsvzMJQ4s5LFIig8FzKUqcrjciawOkytUcML4d+iFeH0FMcCM5Zqk3FfT5t+Nz/oUCVVk/N4zzILyZrYDAFOQ0WnH+YaFPmnUpXqLM5hawti9Psc0MU23ls1GSClMcX0ZAlem/sBzYiEACXtLZohyGA82nDl3C6ULUSZ3CZHqFCMBoFJRgQdO8ol4fOGZsFEOr94YkfdWR9CHw1/H0=
